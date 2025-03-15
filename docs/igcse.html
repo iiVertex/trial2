@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IG Wizard | Past Papers</title> 
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="../css + js files/style.css">
     <script src="../css + js files/script.js" defer></script>
 </head>
@@ -82,125 +82,32 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="pt-24 container mx-auto px-6">
+    <main class="pt-24 min-h-screen flex flex-col items-center justify-center px-4">
         <div class="text-center mb-12">
-            <h1 class="text-3xl font-bold mb-4">Edexcel Subjects</h1>
-            <p class="text-xl text-gray-300">Here you can find Edexcel IGCSE Subjects and access a variety of resources to test your abilities and improve your grades!</p>
+            <h1 class="text-3xl font-bold mb-4">Choose Your Exam Board</h1>
+            <p class="text-xl text-gray-300">Select your examination board to access past papers and resources</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            <!-- Mathematics Card -->
-            <div class="card rounded-lg overflow-hidden">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-16 h-16 mr-4">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="#60A5FA" stroke-width="2"/>
-                                <path d="M30 50h40" stroke="#FFFFFF" stroke-width="4"/>
-                                <path d="M50 30v40" stroke="#FFFFFF" stroke-width="4"/>
-                                <path d="M35 35l30 30M35 65l30-30" stroke="#60A5FA" stroke-width="4"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold">Mathematics</h2>
-                            <p class="text-gray-300">Specification A (9-1)</p>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Mathematics%20A/2016/Specification%20and%20sample%20assessments/international-gcse-in-mathematics-spec-a.pdf" 
-                           target="_blank"
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
-                        <a href="mathedexcel.html" 
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
-                    </div>
-                </div>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+            <!-- Cambridge Link -->
+            <a href="cambridge.html" class="card p-6 rounded-lg transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center">
+                <img src="../images/Cambridge.png" 
+                     alt="Cambridge Assessment International Education" 
+                     class="h-24 object-contain mb-4">
+                <h2 class="text-2xl font-bold text-center">Cambridge</h2>
+            </a>
 
-            <!-- Chemistry Card -->
-            <div class="card rounded-lg overflow-hidden">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-16 h-16 mr-4">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M40 20h20v20l15 35H25l15-35V20z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-                                <path d="M30 65l40-30M30 35l40 30" stroke="#60A5FA" stroke-width="4"/>
-                                <circle cx="50" cy="50" r="5" fill="#60A5FA"/>
-                                <circle cx="35" cy="40" r="3" fill="#FFFFFF"/>
-                                <circle cx="65" cy="60" r="3" fill="#FFFFFF"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold">Chemistry</h2>
-                            <p class="text-gray-300">2017 Specification (9-1)</p>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Chemistry/2017/specification-and-sample-assessments/international-gcse-chemistry-2017-specification.pdf" 
-                           target="_blank"
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
-                        <a href="chemistryedexcel.html" 
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Physics Card -->
-            <div class="card rounded-lg overflow-hidden">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-16 h-16 mr-4">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <g transform="rotate(30 50 50)">
-                                  <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-                                  <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#FFFFFF" stroke-width="2" transform="rotate(60 50 50)"/>
-                                  <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#FFFFFF" stroke-width="2" transform="rotate(120 50 50)"/>
-                                </g>
-                                <circle cx="50" cy="50" r="6" fill="#60A5FA"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold">Physics</h2>
-                            <p class="text-gray-300">2017 Specification (9-1)</p>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2017/specification-and-sample-assessments/international-gcse-physics-2017-specification.pdf" 
-                           target="_blank"
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
-                        <a href="physicsedexcel.html" 
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Biology Card -->
-            <div class="card rounded-lg overflow-hidden">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-16 h-16 mr-4">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 20c-30 30-30 70 0 60s30-30 0-60" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-                                <path d="M50 20c30 30 30 70 0 60s-30-30 0-60" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-                                <path d="M35 40c15 15 15 35 0 30s-15-15 0-30" fill="none" stroke="#60A5FA" stroke-width="2"/>
-                                <path d="M65 40c-15 15-15 35 0 30s15-15 0-30" fill="none" stroke="#60A5FA" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold">Biology</h2>
-                            <p class="text-gray-300">2017 Specification (9-1)</p>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="#" 
-                           target="_blank"
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
-                        <a href="biologyedexcel.html" 
-                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Pearson Edexcel Link -->
+            <a href="edexcel.html" class="card p-6 rounded-lg transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center">
+                <img src="../images/Pearson.jpg" 
+                     alt="Pearson Edexcel" 
+                     class="h-24 object-contain mb-4">
+                <h2 class="text-2xl font-bold text-center">Edexcel</h2>
+            </a>
         </div>
     </main>
+
+    <!-- Footer -->
     <!-- Footer - Fixed Version -->
     <footer class="bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg mt-16 py-12 border-t border-gray-800">
         <div class="container mx-auto px-6">
